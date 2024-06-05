@@ -8,7 +8,6 @@ tensaoAcido = 942.0
 tensaoNeutra = 1650.0
 
 # Variáveis de calibração
-calibracao_condutividade_eletrica = 1.0
 calibracao_saturacao = 1600
 calibracao_temperatura = 25
 
@@ -76,7 +75,7 @@ def calcular_ph_agua(leituraPH):
 def calcular_condutividade_eletrica(leitura_condutividade, temperatura):
     # Cálculo da condutividade elétrica (CE) da água a partir da leitura do sensor de condutividade elétrica
     tensao_cond_eletrica = leitura_condutividade * (tensao_volts / resolucao_analogico_digital)
-    cond_eletrica = (tensao_cond_eletrica / (1.0 + 0.0185 * (temperatura - 25.0))) * calibracao_condutividade_eletrica
+    cond_eletrica = tensao_cond_eletrica / (1.0 + 0.0185 * (temperatura - 25.0))
     return cond_eletrica
     
 def calcular_monoxido_de_carbono(leitura_mc):
