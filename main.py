@@ -137,6 +137,7 @@ while True:
     # Valores random para simular sensores de leitura
     # Utiliza a leitura anterior para não variar muito
     temperatura = obter_maximo(0, temperatura + randint(-3, 3))
+    temperatura = min(temperatura, 45)  # garante que a temperatura não ultrapasse 45 graus
     leituraPH = randint(0, 7000) #obter_maximo(0, leituraPH + randint(-100, 100))
     leitura_condutividade_eletrica = obter_maximo(0, leitura_condutividade_eletrica + randint(-50, 50))
     leitura_oxigenio += obter_maximo(0, randint(-50, 50))
