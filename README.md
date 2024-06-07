@@ -1,6 +1,8 @@
 ## Nome e RM dos Alunos
 *Jeniffer De Moraes RM: 555448*
+
 *Maria Eduarda RM: 558457*
+
 *Matheus Diniz RM: 555683*
 
 ## Link do vídeo explicativo
