@@ -33,7 +33,7 @@ O script irá simular leituras de sensores e exibir os valores calculados, a qua
 
 - *Python 3*
 - *import time*
-- *from random import * 
+- *from random import* 
 - *import os*
 
 ## Dependências
